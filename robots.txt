@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://girajtimshina.com/sitemap.xml
+
+# Crawl-delay to be respectful
+Crawl-delay: 1
+
+# Cache time
+Cache-control: public, max-age=2592000
