@@ -2132,6 +2132,15 @@ section.fade-in {
     object-fit: cover;
     transition: all 0.6s ease;
     animation: imageZoomPan 0.8s ease-out, imageFloat 4s ease-in-out 0.8s infinite;
+    border-radius: var(--border-radius-sm);
+}
+
+.about-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+    height: 100%;
 }
 
 .about-image:hover .about-img {
@@ -2654,6 +2663,29 @@ section.fade-in {
     font-size: var(--font-size-base);
     color: var(--color-text-light);
     margin: 0;
+}
+
+.contact-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xl);
+}
+
+.contact-photo-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-xl);
+    box-shadow: 0 20px 60px rgba(212, 175, 123, 0.3);
+    transition: all var(--transition-base);
+    border: 3px solid rgba(212, 175, 123, 0.2);
+}
+
+.contact-photo-img:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 30px 80px rgba(212, 175, 123, 0.4);
+    border-color: rgba(212, 175, 123, 0.5);
 }
 
 .contact-form {
